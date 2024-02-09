@@ -19,3 +19,12 @@ def sums_of_simple(number):
     return sum_of_digits
 
 #Функция 3.
+import math
+def sums_of_numbers(number):
+    sum_of_digits = 0
+    while number > 0:
+        digit = number % 10
+        sum_of_digits += digit
+        number //= 10
+    return sum_of_digits
+#Доделать далее
