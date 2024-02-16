@@ -26,5 +26,6 @@ def sums_of_numbers(number):
         digit = number % 10
         sum_of_digits += digit
         number //= 10
-    return sum_of_digits
-#Доделать далее
+    for i in range(2,sum_of_digits):
+        if number % i == 0 and math.gcd(i, sum_of_digits) == 1:
+            return i
