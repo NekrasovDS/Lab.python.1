@@ -12,3 +12,8 @@ def count_letter_A(string):
         if letter == 'A':
             count +=1
     return count
+
+def get_filename(file_path)
+    filename = os.path.basename(file_path)
+    file_we = os.path.splitext()
+#Доделать
