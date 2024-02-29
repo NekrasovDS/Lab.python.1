@@ -13,7 +13,7 @@ def count_letter_A(string):
             count +=1
     return count
 
-def get_filename(file_path)
-    filename = os.path.basename(file_path)
-    file_we = os.path.splitext()
-#Доделать
+def get_filename_without_extension(file_path):
+filename = os.path.basename(file_path)
+filename_without_extension = os.path.splitext(filename)[0]
+return filename_without_extension
