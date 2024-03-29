@@ -24,3 +24,14 @@ def count_local_maxima(arr):
     if arr[i] > arr[i - 1] and arr[i] > arr[i + 1]:
       count += 1
 return count
+
+#Задача 45.
+def check_numbers(array):
+  if len(array) < 2:
+    return False
+
+  for i in range(1, len(array)):
+    if (isinstance(array[i-1], int) and isinstance(array[i], int)) or (isinstance(array[i-1], float) and isinstance(array[i], float)):
+      return False
+  return True
+
