@@ -21,5 +21,16 @@ def mean_weight_ascii_deviation(s):
     quadratic_deviation= (mean_weight - max_three_consecutive_ascii) ** 2
     return quadratic_deviation
 
+#Задача 10.
+def count_mirror_triples(s):
+    count = 0
+    for i in range(len(s) - 2):
+        if s[i] == s[i+2] and s[i] != s[i+1]:
+            count += 1
+    return count
+
+def sort_by_mirror_triples(strings):
+    return sorted(strings, key=lambda x: count_mirror_triples(x))
+
 
 
