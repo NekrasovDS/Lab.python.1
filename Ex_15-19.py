@@ -9,3 +9,12 @@ def find_two_min_indices(arr):
   return min1_index, min2_index
 
 #Задача 20.
+def find_missing_numbers(arr):
+  n = len(arr)
+  missing = []
+  for i in range(1, n+1):
+    if i not in arr:
+      missing.append(i)
+  return missing
+
+
