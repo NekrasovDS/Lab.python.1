@@ -35,3 +35,11 @@ def check_numbers(array):
       return False
   return True
 
+#Задача 56.
+def average_of_non_primes_above_avg_of_primes(lst):
+  primes = [num for num in lst if is_prime(num)]
+  non_primes = [num for num in lst if not is_prime(num)]
+  avg_primes = sum(primes) / len(primes) if primes else 0
+  avg_non_primes = sum(num for num in non_primes if num > avg_primes) / len([num for num in non_primes if num > avg_primes]) if any(num > avg_primes for num in non_primes) else 0
+  return avg_non_primes
+
