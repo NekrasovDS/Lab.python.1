@@ -1,5 +1,5 @@
-#Задание 1. Вариант 8.
-#Функция 1.
+# Задание 1. Вариант 8.
+# Функция 1.
 import math
 def count_coprimes(n):
     count = 0
@@ -8,7 +8,7 @@ def count_coprimes(n):
             count += 1
     return count
 
-#Функция 2.
+# Функция 2.
 def sums_of_simple(number):
     sum_of_digits = 0
     while number > 0:
@@ -18,7 +18,7 @@ def sums_of_simple(number):
         number //= 10
     return sum_of_digits
 
-#Функция 3.
+# Функция 3.
 import math
 def sums_of_numbers(number):
     sum_of_digits = 0
